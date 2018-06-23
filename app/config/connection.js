@@ -6,7 +6,7 @@
 var Sequelize = require("sequelize");
 
 // Creates mySQL connection using Sequelize
-var sequelize = new Sequelize("caballus", "root", "cali", {
+var sequelize = new Sequelize("heroku_8ca37554f5537cf", "b42ea677c1494d", "0f7641af", {
   host: "localhost",
   // port: 3306,
   dialect: "mysql",
