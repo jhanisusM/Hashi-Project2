@@ -5,7 +5,15 @@ VALUES (3,'G', "Go For Moonshine", "Old Fashioned", "Go For The Moon",2018-06-17
 
 
 
-
+create table horses (
+id int auto_increment not null,
+age integer,
+gender varchar(255),
+name varchar(255),
+sire varchar(255),
+mare varchar(255),
+primary key (id)
+); 
 
 
 
