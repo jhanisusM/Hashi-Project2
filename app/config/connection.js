@@ -3,7 +3,6 @@
 // *********************************************************************************
 
 // Dependencies
-var Sequelize = require("sequelize");
 var mysql = require('mysql');
 var connection;
 if(process.env.JAWSDB_URL){
@@ -11,10 +10,10 @@ if(process.env.JAWSDB_URL){
 }
 else {
   connection = mysql.createConnection({
-    host:"jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user:"dsdqcg76ojzur9i3",
-    password:"ticxtzc73azmzf0j",
-    database: "jh5djgfpix1fvnkf"
+    host:"localhost",
+    user:"root",
+    password:"cali",
+    database: "caballus"
   });
 };
 connection.connect();
