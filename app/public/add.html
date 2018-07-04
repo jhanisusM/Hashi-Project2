@@ -1,131 +1,129 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
 
-	<meta charset="UTF-8">
-	<title>JockeyExpress</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> &#10020; JockeyExpress &#10020;</title>
 
 	<!-- Bootstrap CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<!-- Custom styles for this template -->
+	<link href="css/simple-sidebar.css" media="screen" title="no title" rel="stylesheet">
+	<link href="css/style.css" media="screen" title="no title" rel="stylesheet">
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
-	<div class="parallax">
-		<!--Navegation Bar-->
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-				<a class="navbar-brand" href="view.html">Jockey Express</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				 aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
+	<div id="wrapper">
 
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="links.html">Resources</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-							 aria-expanded="false">
-								Features
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="add.html">Add Horse</a>
-								<a class="dropdown-item" href="all.html">All Horses</a>
-								<a class="dropdown-item" href="short.html">Weanlings</a>
-								<a class="dropdown-item" href="long.html">Yearlings</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="view.html">Horse Search</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<br>
-		<br>
-		<br>
-
-		<div class="container">
-
-			<div class="jumbotron" style="text-align: center">
-				<h1>
-					<span class="fa fa-bolt"></span> Jockey Express
-					<span class="fa fa-bolt"></span>
-				</h1>
-				<h3>JB Racing Stables</h3>
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="/">
+						<span class="fa fa-bolt"></span> JockeyExpress
+					</a>
+				</li>
 				<hr>
-				<a href="/" class="btn btn-danger btn-lg">
-					<span class="fa fa-eye"></span> Search horses</a>
-				<a href="/add" class="btn btn-danger btn-lg">
-					<span class="fa fa-plus"></span> Add New horse</a>
-				<a href="/all" class="btn btn-danger btn-lg">
-					<span class="fa fa-th-list"></span> All horses</a>
-				<a href="/long" class="btn btn-danger btn-lg">
-					<span class="fa fa-th-list"></span> Yearlings </a>
-				<a href="/short" class="btn btn-danger btn-lg">
-					<span class="fa fa-th-list"></span> Weanlings </a>
-			</div>
+				<li>
+					<a href="/views">
+						<span class="fa fa-eye"></span> Search Horses</a>
+				</li>
+				<li>
+					<a href="/add">
+						<span class="fa fa-plus"></span> Add New Horse</a>
+				</li>
+				<li>
+					<a href="/all">
+						<span class="fa fa-list-ul"></span> View All Horses</a>
+				</li>
+				<li>
+					<a href="/long">
+						<span class="fa fa-th-list"></span> Yearlings</a>
+				</li>
+				<li>
+					<a href="/short">
+						<span class="fa fa-th-list"></span> Weanlings</a>
+				</li>
+				<li>
+					<a href="/about">
+						<span class="fa fa-info-circle"></span> About The Site</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">
+			<span class="fa fa-indent"> Menu</span>
+		</a>
+		<!-- /#sidebar-wrapper -->
 
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-title">
-								<strong>Add horse</strong>
-							</h3>
-						</div>
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="card mt-3 tab-card">
+									<div class="card-header">
+										<h5 class="card-title">
+											<strong>Add horse</strong>
+										</h5>
+									</div>
+									<div class="card-body">
+										<form action="" method="POST" role="form">
+											<div class="form-group">
+												<label for="">Name</label>
+												<input type="text" class="form-control" id="name" placeholder="">
+											</div>
+											<div class="form-group">
+												<label for="">Sire</label>
+												<input type="text" class="form-control" id="sire" placeholder="">
+											</div>
+											<div class="form-group">
+												<label for="">Mare</label>
+												<input type="text" class="form-control" id="mare" placeholder="">
+											</div>
+											<div class="form-group">
+												<label for="">Gender</label>
+												<input type="text" class="form-control" id="gender" placeholder="">
+											</div>
+											<div class="form-group">
+												<label for="">Age</label>
+												<input type="number" class="form-control" id="age" placeholder="">
+											</div>
+										</form>
+										<br>
+										<div class="text-right">
+											<button type="submit" class="btn btn-primary btn-md" id="add-btn">
+												<span class="fa fa-horse"></span> Add horse</button>
+										</div>
+									</div>
 
-						<div class="card-body">
-							<form action="" method="POST" role="form">
-								<div class="form-group">
-									<label for="">Name</label>
-									<input type="text" class="form-control" id="name" placeholder="">
 								</div>
-								<div class="form-group">
-									<label for="">Sire</label>
-									<input type="text" class="form-control" id="sire" placeholder="">
-								</div>
-								<div class="form-group">
-									<label for="">Mare</label>
-									<input type="text" class="form-control" id="mare" placeholder="">
-								</div>
-								<div class="form-group">
-									<label for="">Gender</label>
-									<input type="text" class="form-control" id="gender" placeholder="">
-								</div>
-								<div class="form-group">
-									<label for="">Age</label>
-									<input type="number" class="form-control" id="age" placeholder="">
-								</div>
-							</form>
-							<br>
-							<div class="text-right">
-								<button type="submit" class="btn btn-primary btn-md" id="add-btn">
-									<span class="fa fa-horse"></span> Add horse</button>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
-		
+		<!-- /#page-content-wrapper -->
 	</div>
-	<div class="parallax"></div>
-	<!-- Custom Script -->
+	<!-- /#wrapper -->
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
 	<script src="js/add.js" type="text/javascript"></script>
+	<!-- Menu Toggle Script -->
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
