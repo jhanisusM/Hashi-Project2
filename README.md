@@ -1,6 +1,6 @@
 # JockeyExpress
 
-<img src="https://lh3.googleusercontent.com/I679JiMZhLvQo3ehyFTdtm5xlqtDaJnlTSQeighIEm49FMq3UHr5v5NguuTMuJboLBGTujCZKV2zJC6NQyfv=w1920-h910" />
+<img src="https://image.ibb.co/ddgVXz/jockey_Express.png" />
 
 Jockey Express is a desktop,and web application that enables horse owners to oversee, access, update, view, modify and update a stable database.This application was deployed through heroku, and utilizes JavaScript, Express, Sequelize, MySQL, HTML and CSS.
 
